@@ -1,0 +1,31 @@
+/* MovieSearchPage.css */
+.movie-search-page {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px; /* Top and bottom padding, reduced horizontal padding for small screens */
+}
+
+.container {
+  max-width: 1150px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .movie-search-page {
+    padding: 20px 10px; /* Reduced padding for tablets */
+  }
+
+  .container {
+    max-width: 90%; /* Use a percentage for width on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-search-page {
+    padding: 10px 5px; /* Further reduced padding for mobile devices */
+  }
+
+  .container {
+    max-width: 100%; /* Full width on mobile */
+  }
+}

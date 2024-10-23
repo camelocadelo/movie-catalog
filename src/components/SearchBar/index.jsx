@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Search from './Search.png'
-import './index.css';
+import Search from 'components/SearchBar/icons/Search.png'
+import './SearchBar.css';
 import useDebounce from 'hooks/useDebounce';
 
 const SearchBar = ({ onSearchChange }) => {
