@@ -17,8 +17,8 @@
 
 .icon {
   position: absolute;
-  right: 10px; /* Distance from the right */
+  right: 10px;
   top: 50%;
-  transform: translateY(-50%); /* Center the icon vertically */
-  pointer-events: none; /* Prevent mouse events on the icon */
+  transform: translateY(-50%);
+  pointer-events: none;
 }

@@ -4,12 +4,10 @@ import Arrow from './icons/arrow-right.png'
 import ArrowLeft from './icons/arrow-left.png'
 
 const CustomPagination = ({ totalPages, currentPage, onPageChange }) => {
-  const siblingCount = 1; // Number of page neighbors to display on each side of the current page
-  const maxButtonsToShow = 7; // Total visible buttons (excluding left/right arrows)
+  const siblingCount = 1; 
 
-  // Create the range of page numbers
   const paginationRange = () => {
-    const totalVisiblePages = siblingCount + 5; // Including first, last, and current neighbors
+    const totalVisiblePages = siblingCount + 5;
 
     if (totalPages <= totalVisiblePages) {
       return Array.from({ length: totalPages }, (_, index) => index + 1);

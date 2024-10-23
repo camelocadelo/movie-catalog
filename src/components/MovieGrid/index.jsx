@@ -1,10 +1,9 @@
 import React from 'react';
 import MovieCard from 'components/MovieCard';
-import './MovieGrid.css'
-
+import './MovieGrid.css';
 
 const MovieGrid = ({ movies, searchTerm }) => {
-  if (movies.length === 0 && searchTerm && searchTerm?.length > 0) {
+  if (movies.length === 0 && searchTerm && searchTerm.length > 0) {
     return <p>No movies found.</p>;
   }
 

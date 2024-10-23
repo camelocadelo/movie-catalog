@@ -6,32 +6,36 @@
 }
 
 .header-logo {
-  width: '208px';
-  height: '53px'
+  width: 208px;
+  height: 53px
 }
 
 @media (max-width: 768px) {
   .header {
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
     align-items: flex-start;
    }
 
    .header-logo {
-    width: 150px; /* Adjust logo size for smaller screens */
-    height: auto; /* Maintain aspect ratio */
+    width: 208px;
+    height: 53px 
   }
 }
 
 @media (max-width: 480px) {
+
+  .header-container {
+    padding: 0 10px;
+  }
+
   .header {
-    align-items: center; /* Center items for mobile */
-    padding: 0 10px; /* Reduce padding */
     align-items: flex-start;
 
   }
 
   .header-logo {
-    width: 120px; /* Further adjust logo size */
+    width: 208px;
+    height: 53px
   }
 
   .header div {
