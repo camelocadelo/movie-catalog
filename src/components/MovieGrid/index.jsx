@@ -1,25 +1,20 @@
 import React from 'react';
-import MovieCard from '../MovieCard'
+import MovieCard from 'components/MovieCard';
+import './MovieGrid.css'
 
-const MovieGrid = ({ movies }) => {
-  if (movies.length === 0) {
+
+const MovieGrid = ({ movies, searchTerm }) => {
+  if (movies.length === 0 && searchTerm && searchTerm?.length > 0) {
     return <p>No movies found.</p>;
   }
 
   return (
-    <div style={gridStyles}>
+    <div className="movie-grid">
       {movies.map((movie) => (
         <MovieCard key={movie.imdbID} movie={movie} />
       ))}
     </div>
   );
-};
-
-const gridStyles = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(4, 1fr)', // 4 columns
-  gap: '1rem', // Spacing between movie cards
-  padding: '2rem 0',
 };
 
 export default MovieGrid;

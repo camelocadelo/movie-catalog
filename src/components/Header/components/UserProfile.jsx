@@ -1,5 +1,5 @@
 import React from 'react'
-import Profile from './../profile.png'
+import Profile from 'components/Header/icons/profile.png'
 
 const UserProfile = ({ userName = 'Your name' }) => {
   return (

@@ -1,10 +1,46 @@
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px
+  margin-bottom: 40px;
+  gap: 10px
 }
 
 .header-logo {
   width: '208px';
   height: '53px'
 }
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start;
+   }
+
+   .header-logo {
+    width: 150px; /* Adjust logo size for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    align-items: center; /* Center items for mobile */
+    padding: 0 10px; /* Reduce padding */
+    align-items: flex-start;
+
+  }
+
+  .header-logo {
+    width: 120px; /* Further adjust logo size */
+  }
+
+  .header div {
+    margin-bottom: 10px; /* Space between elements on small screens */
+  }
+
+  .header div:last-child {
+    margin-bottom: 0; /* Remove bottom margin for last element */
+  }
+}
+
+

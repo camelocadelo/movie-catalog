@@ -1,12 +1,13 @@
 import React from 'react';
+import './MovieCard.css'
 
 const MovieCard = ({ movie }) => {
   return (
-    <div style={cardStyles}>
+    <div className="movie-card">
       <img 
         src={movie.Poster !== 'N/A' ? movie.Poster : 'https://via.placeholder.com/150'} 
-        alt={movie.Title} 
-        style={imageStyles}
+        alt={movie.Title}
+        className='movie-card-image'
       />
       <div>
         <p> Name: {movie.Title} </p>
@@ -22,17 +23,6 @@ const MovieCard = ({ movie }) => {
 // Some basic styling for the movie card
 const cardStyles = {
   width: '245px'
-  // border: '1px solid #ddd',
-  // padding: '1rem',
-  // textAlign: 'center',
-};
-
-const imageStyles = {
-  width: '100%',
-  height: '275px',
-  borderRadius: '10px',
-  border: '1px solid #6627FF',
-  marginBottom: '25px'
 };
 
 export default MovieCard;
