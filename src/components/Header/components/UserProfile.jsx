@@ -3,13 +3,17 @@ import Profile from 'components/Header/icons/profile.png'
 
 const UserProfile = ({ userName = 'Your name' }) => {
   return (
-    <div style={{ display: 'flex', alignItems: 'center' }}>
-      {/* replace profile png to svg */}
+    <div style={flexStyles}>
         <img src={Profile} />
         &nbsp;
         <div> {userName} </div>
     </div>
   );
 };
+
+const flexStyles = {
+  display: 'flex',
+  alignItems: 'center' 
+}
 
 export default UserProfile;

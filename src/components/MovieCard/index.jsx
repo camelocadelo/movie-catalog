@@ -20,9 +20,5 @@ const MovieCard = ({ movie }) => {
   );
 };
 
-// Some basic styling for the movie card
-const cardStyles = {
-  width: '245px'
-};
 
 export default MovieCard;

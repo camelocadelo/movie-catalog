@@ -9,14 +9,12 @@ const SearchBar = ({ onSearchChange }) => {
 
   const debouncedSearch = useDebounce(searchTerm, 500); // Debouncing input with 500ms delay
 
-  // Effect to trigger the parent's search handler when the debounced value changes
   React.useEffect(() => {
     if (debouncedSearch) {
       onSearchChange(debouncedSearch);
     }
   }, [debouncedSearch, onSearchChange]);
 
-  // Event handler for the input change
   const handleInputChange = (e) => {
     setSearchTerm(e.target.value);
   };
